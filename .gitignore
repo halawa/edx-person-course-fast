@@ -1,3 +1,4 @@
 settings.py
 custom_utilities.py
 *.pyc
+.idea
