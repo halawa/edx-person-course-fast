@@ -24,6 +24,7 @@ this file upstream, since it contains the functions that will likely differ from
 another, such as fetching grades and course metadata.
 
 4. If all config is correct, you should now be able to run any of the main_-------.py scripts as `python main_-------.py`
+You can do a quick test run over 3 courses by switching on the "quick_run" parameter in your settings.py.
 
 # Common Parameters
 Some parameters are defined in the code that might affect certain analysis outputs. It is important to point them out
@@ -32,4 +33,6 @@ and unify them if the analysis is being run by different researchers.
 These parameters are all placed in the settings file to ensure all parts of the analysis read their same values.
 - min_enrollments_for_course_inclusion: This is used to filter out "playground courses", created for learning studio,
 for instance. Analysis functions that loop over courses fetch a list of course IDs from the enrollments table, and exclude
-the course if its number of enrollments is lower than this parameter
+the course if its number of enrollments is lower than this parameter.
+- min_viewers_for_chapter_inclusion: This is used to filter out chapters that haven't gone live, based on how many
+viewers viewed it.

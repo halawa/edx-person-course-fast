@@ -22,7 +22,7 @@ def get_course_grade_data(course_id):
     """
 
     raise NotImplementedError("The function get_course_grade_data is not implemented. \
-    Please create a file called custom_utilities.py and implement this function with the same call signature in it.")
+Please create a file called custom_utilities.py and implement this function with the same call signature in it.")
 
 
 def get_course_metadata():
@@ -38,3 +38,5 @@ def get_course_metadata():
         - "course_launch",
         - "4-way"
     """
+    raise NotImplementedError("The function get_course_metadata is not implemented. \
+Please create a file called custom_utilities.py and implement this function with the same call signature in it.")
